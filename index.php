@@ -13,17 +13,6 @@ $p = new Profil();
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
 <body>
-
-	<header>
-		<div class="tutucu">
-			<nav>
-				<a href="#erkek"><button class="erkek-btn" data-cinsiyet="erkek">♂</button></a>
-				<a href="#kadin"><button class="kadin-btn" data-cinsiyet="kadin">♀</button></a>
-				<a href="#uniseks"><button class="uniseks-btn" data-cinsiyet="üniseks" class="aktif">⚥</button></a>
-			</nav>
-		</div><!-- /.tutucu -->
-	</header>
-
 	<main>
 		<div class="tutucu">
 			<div id="profil">
@@ -106,37 +95,23 @@ $p = new Profil();
 			<div id="detaylar">
 				<div id="hakkinda" class="modal">
 					<h2 class="modal-baslik">Hakkında</h2>
-					<p>Rastgele Profil Oluşturucu tasarımcılar için rastgele profil bilgileri oluşturmaya yarayan basit bir araçtır. <a href="http://burakgarci.net">Burak Garcı</a> tarafından geliştirilmiştir.</p>
-					<p>Profil fotoğrafları <a href="http://unsplash.com">unsplash.com</a> sitesi üzerinde <strong>CC0 1.0 Evrensel</strong> lisansı altında yayınlanan fotoğraflardan seçilmiştir.</p>
-					<p>Ayrıca bu web sitesi açık kaynak kodludur. <a target="_blank" href="http://github.com/burakgarci">GitHub</a> üzerinden kaynak kodları görüntüleyebilirsiniz.</p>
-					<p><a href="http://burakgarci.net/iletisim">burakgarci.net/iletisim</a> adresinden geribildirimde bulunabilirsiniz.</p>
-					<p>Bir şeyler ısmarlak ister misiniz? <a href="http://paypal.me/garci">Evet</a> - <a href="https://google.com.tr/search?q=isteyenin+bir+yüzü+vermeyenin+iki+yüzü+kara">Hayır</a></p>
-
+					<p>Rastgele Profil Oluşturucu.
+					<p>Bir şeyler ısmarlak ister misiniz? <a href="https://www.buymeacoffee.com/recoo">Evet</a> - <a href="https://google.com.tr/search?q=isteyenin+bir+yüzü+vermeyenin+iki+yüzü+kara">Hayır</a></p>
 					<button class="modal-tamam">Hmm, iyiymiş.</button>
 				</div>
 				<div id="api" class="modal">
 					<h2 class="modal-baslik">API</h2>
 					<p>İstek limiti yoktur, bir defada en fazla 200 farklı kullanıcı profili oluşturabilirsiniz. Çıktı JSON formatındadır.</p>
-
-					<h3>Uyarı</h3>
-					<p class="uyari">Profil resimlerini sunmak için ücretli bir servis kullanmadığımdan bant genişliği sınırı mevcut. Resim adreslerini uygulamanızdan veya web sitenizden sürekli olarak erişmek için kullanmayın. Kullanacağınız resimleri indirin ve kendi sunucunuzda saklayın. Bu servis resim sunucusu amaçlı değil restgele profil oluşturmak için kodlandı. Ücretsiz profil resimleri edinmek için <a target="_blank" href="https://unsplash.com/developers">unsplash.com API</a> kullanın.</p>
-
 					<h3>Kullanım</h3>
 					<p>
-						<pre>http://rp.burakgarci.net/api.php</pre>
+						<pre>https://recoo-test.herokuapp.com/api.php</pre>
 
 					</p><pre><?php echo $p->api(1); ?></pre>
 					
 					<h3>Parametreler</h3>
-
-					<p>
-						Cinsiyet seçerek oluşturma (kadın, erkek):
-						<pre>http://rp.burakgarci.net/api.php?cinsiyet=kadın</pre>
-					</p>
-
 					<p>
 						Birden fazla profil oluşturma (en fazla 200):
-						<pre>http://rp.burakgarci.net/api.php?adet=20</pre>
+						<pre>https://recoo-test.herokuapp.com/api.php?adet=20</pre>
 					</p>
 
 					<button class="modal-tamam">Eyvallah</button>
