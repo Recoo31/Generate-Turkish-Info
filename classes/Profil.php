@@ -1,10 +1,6 @@
 <?php
 
-/**
-* Rastgele Profil Oluşturucu
-* Burak Garcı
-* burakgarci.net 
-*/
+
 
 require_once 'Veri.php';
 $veri = new Veri();
@@ -47,7 +43,7 @@ class Profil
 		$epostalar[] = strtolower(str_replace($bul, $yap, $this->soyisim).str_replace($bul, $yap, $this->isim));
 		$epostalar[] = strtolower(str_replace($bul, $yap, $this->soyisim).str_replace($bul, $yap, $this->isim)).mt_rand(00,999);
 
-		return $epostalar[array_rand($epostalar)]."@example.com";
+		return $epostalar[array_rand($epostalar)]."@gmail.com";
 	}
 
 	private function web_adresi() {
