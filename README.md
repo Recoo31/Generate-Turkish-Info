@@ -1,5 +1,8 @@
 Türkçe info oluşturmanıza yarar.
+
 İnfo Örneği: 
+
+```
 {
     "isim": "Abdullati̇f",
     "soyisim": "Sarı",
@@ -18,6 +21,6 @@ Türkçe info oluşturmanıza yarar.
     "biyografi": "25 yaşında, Web İletişim Sorumlusu, Oryantiring manyağı",
     "web_adresi": "abdullati̇f-sari.net"
 }
+```
 
-
-Hazırdaki sitemin apisi: https://recoo-test.herokuapp.com/api.php
+Hazırdaki websitemin apisi: https://recoo-test.herokuapp.com/api.php
